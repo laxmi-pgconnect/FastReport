@@ -1,0 +1,13 @@
+﻿@model HomeModel
+
+<div class="title">
+    <a href="/"><span>Report</span><span style="opacity:0.35"> </span></a>
+</div>
+
+
+
+<div class="container">
+    <div class="webreport">
+        @await Model.WebReport.Render()
+    </div>
+</div>

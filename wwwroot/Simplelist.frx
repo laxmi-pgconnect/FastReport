@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/14/2020 15:19:25" ReportInfo.Modified="08/14/2020 16:16:18" ReportInfo.CreatorVersion="2020.3.10.0" ReportInfo.Name="Simplelist"  >
+	<Dictionary>
+		<TableDataSource Name="tm_itemtype" ReferenceName="Database.tm_itemtype" DataType="System.Int32" Enabled="true">
+			<Column Name="ItemType" DataType="System.String"/>
+			<Column Name="Descn" DataType="System.String"/>
+			<Column Name="IsActive" DataType="System.String"/>
+			<Column Name="Nature" DataType="System.String"/>
+
+		</TableDataSource>
+	</Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text1" Left="9.45" Width="94.5" Height="18.9" Text="ItemType" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="141.75" Width="94.5" Height="18.9" Text="Descn" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="274.05" Width="94.5" Height="18.9" Text="IsActive" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="415.8" Width="94.5" Height="18.9" Text="Nature" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6" DataSource="tm_itemtype" >
+      <TextObject Name="Text2" Left="9.45" Top="18.9" Width="94.5" Height="18.9" Text="[tm_itemtype.ItemType]" Font="Arial, 10pt"/>
+      <TextObject Name="Text4" Left="141.75" Top="18.9" Width="94.5" Height="18.9" Text="[tm_itemtype.Descn]" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="274.05" Top="18.9" Width="94.5" Height="18.9" Text="[tm_itemtype.IsActive]" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="415.8" Top="18.9" Width="94.5" Height="18.9" Text="[tm_itemtype.Nature]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>
